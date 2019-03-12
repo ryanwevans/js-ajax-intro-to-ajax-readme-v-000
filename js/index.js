@@ -16,7 +16,7 @@ function showRepositories() {
 
 function getRepositories() {
   const req = new XMLHttpRequest();
-  req.addEventListener('Load', showRepositories());
+  req.addEventListener('Load', showRepositories);
   req.open('GET', 'https://api.github.com/users/ryanwevans/repos');
   req.send();
 }
